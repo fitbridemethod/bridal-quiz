@@ -11,15 +11,15 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --rose:       #C8526A;
-    --rose-light: #F5E6EA;
-    --rose-mid:   #E8B4BF;
-    --cream:      #FAF6F2;
-    --warm-white: #FFFCFA;
-    --text-dark:  #2C1A1F;
-    --text-mid:   #6B4A52;
-    --text-soft:  #A07A84;
-    --border:     #EDD9DF;
+    --rose:       #F20083;
+    --rose-light: #FDE8F3;
+    --rose-mid:   #F799CC;
+    --cream:      #FDF5FA;
+    --warm-white: #FFFAFD;
+    --text-dark:  #1F0A14;
+    --text-mid:   #5C2B45;
+    --text-soft:  #A06080;
+    --border:     #F0D0E4;
     --gold:       #C4974A;
   }
 
@@ -59,7 +59,7 @@
     max-width: 620px;
     width: calc(100% - 32px);
     margin: 48px auto 64px;
-    box-shadow: 0 4px 40px rgba(180, 90, 110, 0.07);
+    box-shadow: 0 4px 40px rgba(242, 0, 131, 0.07);
   }
 
   /* ── INTRO SCREEN ── */
@@ -133,7 +133,7 @@
     text-align: center;
   }
 
-  .btn-start:hover { background: #b34460; transform: translateY(-1px); }
+  .btn-start:hover { background: #c8006c; transform: translateY(-1px); }
   .btn-start:active { transform: translateY(0); }
 
   .intro-disclaimer {
@@ -298,7 +298,7 @@
   }
 
   .btn-next:disabled { opacity: 0.3; cursor: default; transform: none; }
-  .btn-next:hover:not(:disabled) { background: #b34460; transform: translateY(-1px); }
+  .btn-next:hover:not(:disabled) { background: #c8006c; transform: translateY(-1px); }
   .btn-next:active:not(:disabled) { transform: translateY(0); }
 
   /* ── RESULT ── */
@@ -393,7 +393,7 @@
     transition: background 0.2s, transform 0.15s;
   }
 
-  .btn-cta:hover { background: #b34460; transform: translateY(-1px); }
+  .btn-cta:hover { background: #c8006c; transform: translateY(-1px); }
 
   .btn-retake {
     display: block;
@@ -572,21 +572,21 @@ const results = {
   A: {
     eyebrow: "Your blind spot",
     title: "You're working hard — but working against yourself",
-    typeLabel: "Result type: The Hard Worker",
+    typeLabel: "Result type: The High-Achiever Bride",
     body: "You're not the problem. Your strategy is. Eating \"clean\" without tracking macros is like throwing darts in the dark — you can't manage what you don't measure. And HIIT, while great for cardio, is not the most efficient path to the lean, toned look you're after before your wedding. The frustration of putting in real effort and not seeing the scale move is exhausting — and it makes you feel like something is wrong with you. Nothing is wrong with you. You've just been handed the wrong tools.",
     action: "This week, write down everything you eat for 3 days without changing anything. You'll likely discover you're either eating far less than you need (which is stalling your metabolism) or that \"healthy eating\" has some hidden gaps. Awareness is step one — and it changes everything."
   },
   B: {
     eyebrow: "Your blind spot",
     title: "You have the motivation — you just need a roadmap",
-    typeLabel: "Result type: The Lost Girl",
+    typeLabel: "Result type: The Becoming Bride",
     body: "You show up. You try. But walking into the gym without a clear, progressive plan means you're spending energy without direction — and that's demoralizing over time. The gym-timidation is real, and it is not a personal failing. Most women were never taught how to strength train with intention. There's a massive difference between \"working out\" and training toward a specific goal with a plan that builds week over week. You are so much closer than you think — you just need structure.",
     action: "This week, commit to doing the same three exercises, in the same order, twice. That's it. Pick a squat, a hip hinge (like a deadlift), and a push (like a dumbbell press). Write down your weights. Doing it twice shows you what \"consistent and progressive\" actually feels like — and it's less overwhelming than you think."
   },
   C: {
     eyebrow: "Your blind spot",
     title: "You keep waiting for the perfect time — and it's costing you",
-    typeLabel: "Result type: The Almost There",
+    typeLabel: "Result type: The Balancing Bride",
     body: "There's always another trip on the calendar. Another bachelorette, another work event, another \"once things calm down.\" But here's the truth: that's not a discipline problem — that's a plan that isn't flexible enough to survive your real life. When a program is rigid and all-or-nothing, of course life knocks you off track. The brides who feel the most confident on their wedding day didn't wait for a clear calendar. They started with a plan designed to bend — not break — around their actual life.",
     action: "This week, identify the one upcoming event or trip you've been using as a reason to wait. Then ask yourself: what would it look like to make progress anyway — not perfectly, but imperfectly? One workout. One protein-forward meal per day. Progress doesn't pause for life when your plan is built around it."
   }
