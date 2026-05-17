@@ -505,12 +505,17 @@
     <p class="result-body" id="result-body"></p>
     <div class="result-divider"></div>
     <div class="result-action-box">
-      <strong>Your action this week</strong>
+      <strong>What becomes possible</strong>
       <span id="result-action"></span>
     </div>
-    <a class="btn-cta" id="result-cta" href="YOUR_GHL_BOOKING_LINK_HERE" target="_blank">Book your free strategy call →</a>
+    <div class="result-divider"></div>
+    <div style="background: var(--rose-light); border-radius: 12px; padding: 18px 20px; margin-bottom: 4px;">
+      <span style="font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rose); display: block; margin-bottom: 10px;">A bride just like you</span>
+      <p style="font-size: 14px; color: var(--text-mid); line-height: 1.7; font-style: italic;" id="result-testimonial"></p>
+    </div>
+    <a class="btn-cta" id="result-cta" href="YOUR_GHL_BOOKING_LINK_HERE" target="_blank">Book your free bridal strategy call →</a>
     <button class="btn-retake" onclick="retakeQuiz()">Retake the quiz</button>
-    <p class="result-footer">No pressure, no pitch — just a conversation about your goals.</p>
+    <p class="result-footer">This is a free call. No pressure, no pitch — just clarity on your next step.</p>
   </div>
 
 </div>
@@ -570,25 +575,28 @@ const questions = [
 
 const results = {
   A: {
-    eyebrow: "Your blind spot",
+    eyebrow: "Your blind spot: The Strategy Gap",
     title: "You're working hard — but working against yourself",
-    typeLabel: "Result type: The High-Achiever Bride",
-    body: "You're not the problem. Your strategy is. Eating \"clean\" without tracking macros is like throwing darts in the dark — you can't manage what you don't measure. And HIIT, while great for cardio, is not the most efficient path to the lean, toned look you're after before your wedding. The frustration of putting in real effort and not seeing the scale move is exhausting — and it makes you feel like something is wrong with you. Nothing is wrong with you. You've just been handed the wrong tools.",
-    action: "This week, write down everything you eat for 3 days without changing anything. You'll likely discover you're either eating far less than you need (which is stalling your metabolism) or that \"healthy eating\" has some hidden gaps. Awareness is step one — and it changes everything."
+    typeLabel: "The High-Achiever Bride",
+    body: "You're not the problem. Your strategy is. Eating \"clean\" without tracking macros is like throwing darts in the dark — you genuinely cannot manage what you don't measure. And HIIT and cardio, while great for your heart, are not how you build the lean, toned look you want in your photos. Here's what's hard about your situation: you're putting in real effort and getting nothing back. That's not just frustrating — it's defeating. And the longer you keep doing the wrong things harder, the further you get from the wedding day confidence you deserve. The effort is there. What's missing is a strategy built for your body and your actual goal.",
+    action: "Imagine getting your wedding photos back and actually loving what you see. Being fully present at your reception — not in your head about your arms or how you look from a certain angle. That's not out of reach. It's what happens when the strategy finally matches the effort you've already been putting in. But you can't get there by doing more of what isn't working. The next step is a conversation — one where we look at exactly what's going on with your nutrition and training and build a plan that finally moves the needle.",
+    testimonial: "\"I've lost 20 pounds — from 154 to 134. I didn't even think that was going to be possible. The macros and strength training were the biggest game-changers. I was doing pilates before. I'm proud of myself and finally feel like myself again.\" — Lauren, Fit Bride Method client"
   },
   B: {
-    eyebrow: "Your blind spot",
+    eyebrow: "Your blind spot: The Structure Gap",
     title: "You have the motivation — you just need a roadmap",
-    typeLabel: "Result type: The Becoming Bride",
-    body: "You show up. You try. But walking into the gym without a clear, progressive plan means you're spending energy without direction — and that's demoralizing over time. The gym-timidation is real, and it is not a personal failing. Most women were never taught how to strength train with intention. There's a massive difference between \"working out\" and training toward a specific goal with a plan that builds week over week. You are so much closer than you think — you just need structure.",
-    action: "This week, commit to doing the same three exercises, in the same order, twice. That's it. Pick a squat, a hip hinge (like a deadlift), and a push (like a dumbbell press). Write down your weights. Doing it twice shows you what \"consistent and progressive\" actually feels like — and it's less overwhelming than you think."
+    typeLabel: "The Becoming Bride",
+    body: "You show up. You try. But walking into the gym without a clear, progressive plan means you're spending real energy without direction — and that's defeating over time. The overwhelm you feel isn't weakness. It's what happens when nobody has ever given you a framework that actually makes sense for your body and your goal. There's a massive difference between \"working out\" and training with intention toward something specific. Right now you're just showing up and going through the motions — and wondering why your body isn't changing. You are not behind. You are simply without a map.",
+    action: "Imagine walking into the gym and knowing exactly what you're doing and why — and actually seeing your body change because of it. Feeling strong and capable for the first time. Getting to your wedding day and standing in front of that mirror thinking — I did that. That confidence doesn't come from random workouts. It comes from a plan that was built around you, your schedule, and where you're starting from right now. That's what a strategy call with me is for — to build that map together so you stop wandering and start progressing.",
+    testimonial: "\"I lost 14 lbs and gained a new confidence in myself — in the gym but also how I carry myself. I have so much more energy to be present in my life. I didn't know where to start at all. I was lost in the gym.\" — Client, Fit Bride Method"
   },
   C: {
-    eyebrow: "Your blind spot",
+    eyebrow: "Your blind spot: The Consistency Gap",
     title: "You keep waiting for the perfect time — and it's costing you",
-    typeLabel: "Result type: The Balancing Bride",
-    body: "There's always another trip on the calendar. Another bachelorette, another work event, another \"once things calm down.\" But here's the truth: that's not a discipline problem — that's a plan that isn't flexible enough to survive your real life. When a program is rigid and all-or-nothing, of course life knocks you off track. The brides who feel the most confident on their wedding day didn't wait for a clear calendar. They started with a plan designed to bend — not break — around their actual life.",
-    action: "This week, identify the one upcoming event or trip you've been using as a reason to wait. Then ask yourself: what would it look like to make progress anyway — not perfectly, but imperfectly? One workout. One protein-forward meal per day. Progress doesn't pause for life when your plan is built around it."
+    typeLabel: "The Balancing Bride",
+    body: "There's always another trip on the calendar. Another bachelorette, another work event, another \"once things calm down, I'll start.\" And every time you restart from zero, you lose a little more confidence that this is actually going to happen for you. Here's what I need you to hear: that is not a discipline problem. That is a plan that was never built to survive your real life. A rigid, all-or-nothing program was always going to fall apart the second a fun weekend hit. You were set up to fail before you even started.",
+    action: "Imagine having a plan that actually bends around your life — where a bachelorette trip doesn't mean starting over on Monday, where date nights and work happy hours are already accounted for, where you're making progress AND living your life at the same time. That's not a fantasy. That's what happens when the plan is built around YOU instead of demanding you pause your life for it. Your wedding day is coming. The brides who feel the most confident didn't wait for things to calm down — they started with a plan flexible enough to handle the chaos. That conversation starts here.",
+    testimonial: "\"It's now seven months after my wedding and I am still keeping her in my thoughts and my health in check. This girl doesn't make you skinny — she makes you HEALTHY. What you pay her to do is worth a LIFE of healthiness.\" — Client, Fit Bride Method"
   }
 };
 
@@ -680,6 +688,7 @@ function showResult() {
   document.getElementById('result-type-label').textContent = r.typeLabel;
   document.getElementById('result-body').textContent = r.body;
   document.getElementById('result-action').textContent = r.action;
+  document.getElementById('result-testimonial').textContent = r.testimonial;
   document.getElementById('result-cta').href = GHL_LINK;
   showScreen('screen-result');
 }
